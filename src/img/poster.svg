@@ -1,0 +1,15 @@
+<svg width="338px" height="497px" viewBox="0 0 338 497" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="101.999998%" y2="100.999999%" id="linearGradient-1">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#C86DD7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#979797" fill="url(#linearGradient-1)" x="0.5" y="0.5" width="337" height="496"></rect>
+        <text id="DPLAYS-API-SUCK-SO-N" font-family="ProductSans-Bold, Product Sans" font-size="33" font-weight="bold" fill="#FFFFFF">
+            <tspan x="32.0995" y="225">DPLAYS API SUCK</tspan>
+            <tspan x="41.9995" y="265">SO NO POSTERS</tspan>
+        </text>
+    </g>
+</svg>

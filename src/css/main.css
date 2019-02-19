@@ -1,4 +1,4 @@
-.player {
+.player-area, .poster {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,9 +14,20 @@ body {
   background: #252525;
 }
 
+.player-area {
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.vjs_video_3-dimensions {
+  height: 500px;
+  width: 1000px;
+}
+
 .movie {
   margin-top: 20px;
-  margin-left: auto;
+  margin-left: 4%;
   margin-right: auto;
   margin-bottom: 20px;
 }
@@ -26,18 +37,22 @@ body {
   text-decoration: none;
   color: white;
   text-align: center;
-  width: 130px;
-  height: 300px;
+  width: 160px;
+  height: 350px;
 }
 
-.movie img {
-  -ms-flex-item-align: left;
-      -ms-grid-row-align: left;
-      align-self: left;
+.poster {
   height: 200px;
-  width: 130px;
+  width: 160px;
   -webkit-box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.28);
           box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.28);
+  color: white;
+  background-color: #3d8686;
+  text-align: center;
+}
+
+.poster p {
+  width: 80%;
 }
 
 .waves-effect {
@@ -167,5 +182,28 @@ body {
   box-shadow: 0px 8px 20px 1px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.button {
+  height: 50px;
+  width: 140px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #ff2a2a;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  font-size: 17px;
+  margin: 0 auto;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 15.4vw;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

@@ -46,13 +46,13 @@ class Episode extends Component {
   }
 
   render() {
-    var {isLoaded, streamItems} = this.state;
+    var {isLoaded, streamItems, episodeItems} = this.state;
        if (!isLoaded) {
       return <div>Laddar...</div>
     } else {
       return (
         <div>
-            <Player src={streamItems.attributes.streaming.hls.url}/>
+            <Player src={streamItems.attributes.streaming.hls.url} title={episodeItems.attributes.name}/>
         </div>
       );
     }

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@silvermine/videojs-chromecast": "^1.1.1",
     "axios": "^0.18.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
@@ -10,8 +11,10 @@
     "react-player": "^1.9.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5",
+    "svg-inline-loader": "^0.8.0",
     "video-react": "^0.13.2",
     "video.js": "^7.4.1",
+    "videojs-chromecast": "^2.0.8",
     "videojs-contrib-hls": "^5.15.0"
   },
   "scripts": {

@@ -4,7 +4,6 @@ import './index.css';
 import './css/main.css';
 import Home from './components/Home/Home';
 import Show from './components/Show/Show';
-import App from './components/App';
 
 import Episode from './components/Episode/Episode';
 import { Route, BrowserRouter as Router } from 'react-router-dom';

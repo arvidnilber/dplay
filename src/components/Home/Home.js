@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import './Home.css';
 import axios from 'axios';
+import Poster from '../Poster';
+import Header from '../Header/Header';
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       itemsOl: [],
       isLoaded: false,
-      posterUrl: []
+      posterUrl: [],
+
     }
   }
 
@@ -25,8 +28,7 @@ class Home extends Component {
           isLoaded:true
         });
     })
-    var i;
-
+  
     // for (i = 0; i < this.state.itemsOl.length; i++) { 
     //   await axios.get(`https://disco-api.dplay.se/content/shows/${this.state.itemsOl[i].attributes.alternateId}?include=images`, {
     //   headers: {
@@ -48,11 +50,11 @@ class Home extends Component {
       return <div>Laddar</div>
     } else {
       return (
-      
         <div className="movie">
           { itemsOl.map((item) =>
                     <a href={'/' + item.attributes.alternateId} className="waves-effect waves-light">
-                        <img src="https://svgur.com/i/BGc.svg" alt={item.attributes.alternateId}></img>
+                        {/* <img src="https://svgur.com/i/BGc.svg" alt={item.attributes.alternateId}></img> */}
+                        <Poster title={item.attributes.name}></Poster>
                         <p>{item.attributes.name}</p>
                     </a>
 

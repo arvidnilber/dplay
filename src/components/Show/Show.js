@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Show.css';
 import axios from 'axios';
-
+import Poster from '../Poster'
 class Show extends Component {
   constructor(props) {
     super(props);
@@ -50,13 +50,14 @@ class Show extends Component {
       return <div>Laddar</div>
     } else {
       return (
-      
-        <div className="App">
-          <ul>
-          { episodes.map((item) => <li>
-                    <a href={'/' + item.attributes.path} key={item.id}>{item.attributes.name}</a>
-              </li>)}
-          </ul>
+        <div className="movie ">
+          { episodes.map((item) => 
+                    <a href={'/' + item.attributes.path} className="waves-effect waves-light" key={item.id}>
+                     <Poster title={item.attributes.name}></Poster>
+                      <p>{item.attributes.name}</p>
+                      <p> Säsong {item.attributes.seasonNumber} avsnitt {item.attributes.episodeNumber}</p>
+                    </a>
+              )}
         </div>
       );
     }
