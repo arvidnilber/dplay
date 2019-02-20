@@ -16,7 +16,9 @@ class Player extends Component {
 					<source src={this.props.src} type="application/x-mpegURL" />
 				</video>
 			</div>
-			<a target="_blank" rel="noopener noreferrer" className="waves-effect waves-light" href={'https://chromecast.link#title="'+this.props.title + '"&subtitle=Subtitle&content='+ this.props.src}><div className="button">Chromecast</div></a>
+			<div className="chromecastButton">
+				<a target="_blank" rel="noopener noreferrer" className="waves-effect waves-light" href={'https://chromecast.link#title="'+this.props.title + '"&subtitle=Subtitle&content='+ this.props.src}><div className="button">Chromecast</div></a>
+			</div>
 		</div>
     )
   }

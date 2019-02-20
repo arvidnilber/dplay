@@ -5,23 +5,23 @@
   "dependencies": {
     "@silvermine/videojs-chromecast": "^1.1.1",
     "axios": "^0.18.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.2",
+    "react-cookie": "^3.0.8",
     "react-dom": "^16.8.2",
-    "react-hls": "^0.0.8",
-    "react-player": "^1.9.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5",
-    "svg-inline-loader": "^0.8.0",
-    "video-react": "^0.13.2",
+    "serve": "^10.1.2",
     "video.js": "^7.4.1",
-    "videojs-chromecast": "^2.0.8",
     "videojs-contrib-hls": "^5.15.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "startBuild": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"

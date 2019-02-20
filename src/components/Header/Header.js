@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
-
+import Search from '../Search/Search'
 class Header extends Component {
   render () {
     return (
-    <div className='container'>
-            <h1>Hej</h1>
-        </div>
-          )
+    <div className='header'>
+		<ul>
+			<li className="waves-effect waves-light left">
+				<a href="/">dplay</a>
+			</li>
+      <li>
+        <Search/>
+      </li>
+		</ul>
+    </div>
+    )
   }
 }
 export default Header;
