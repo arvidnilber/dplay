@@ -6,7 +6,7 @@ class Header extends Component {
     <div className='header'>
 		<ul>
 			<li className="waves-effect waves-light left">
-				<a href="/">dplay</a>
+			    <a href="/p/p/post">dplay</a>
 			</li>
       <li>
         <Search/>
@@ -16,4 +16,4 @@ class Header extends Component {
     )
   }
 }
-export default Header;
+export default Header; 

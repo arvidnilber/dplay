@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Episode.css';
 import axios from 'axios';
-import Header from '../Header/Header';
 import Loading from '../Loading'
 import Player from '../Player/Player'
 // import 'react-hls/src/style.css'; // need to import basic styles
@@ -69,7 +68,6 @@ class Episode extends Component {
     } else {
       return (
         <div className="container">
-            <Header></Header>
             <Player src={streamItems.attributes.streaming.hls.url} title={episodeItems.attributes.name}/>
             <div className="episode-info">
                 <h3>{episodeItems.attributes.name}</h3>

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Show.css';
 import axios from 'axios';
 import Poster from '../Poster'
-import Header from '../Header/Header';
 import Loading from '../Loading'
 
 class Show extends Component {
@@ -56,20 +55,19 @@ class Show extends Component {
     } else {
       return (
         <div className="container">
-           <Header/>
-		   <div className="info">
-				<h3>{showData.attributes.name}</h3>
-				<h4>{showData.attributes.description}</h4>
-		   </div>
-			<div className="movie">
-			{ episodes.map((item) => 
-						<a href={'/' + item.attributes.path} className="waves-effect waves-light" key={item.id}>
-						<Poster title={item.attributes.name}></Poster>
-						<p>{item.attributes.name}</p>
-						<p> Säsong {item.attributes.seasonNumber} avsnitt {item.attributes.episodeNumber}</p>
-						</a>
-				)}
-			</div>
+        <div className="info">
+          <h3>{showData.attributes.name}</h3>
+          <h4>{showData.attributes.description}</h4>
+        </div>
+        <div className="movie">
+        { episodes.map((item) => 
+              <a href={'/' + item.attributes.path} className="waves-effect waves-light" key={item.id}>
+              <Poster title={item.attributes.name}></Poster>
+              <p>{item.attributes.name}</p>
+              <p> Säsong {item.attributes.seasonNumber} avsnitt {item.attributes.episodeNumber}</p>
+              </a>
+          )}
+        </div>
         </div>
       );
     }

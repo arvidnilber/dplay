@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Home.css';
 import axios from 'axios';
 import Poster from '../Poster';
-import Header from '../Header/Header';
 import Loading from '../Loading'
 class Home extends Component {
   constructor(props) {
@@ -54,7 +53,6 @@ class Home extends Component {
     } else {
       return (
         <div className="container">
-          <Header/>
           <div className="movie">
             { itemsOl.map((item) =>
                       <a href={'/' + item.attributes.alternateId} className="waves-effect waves-light" key={item.id}>
