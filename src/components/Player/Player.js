@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 // import ReactHLS from 'react-hls';
 import videojs from 'video.js';
 import 'video.js/dist/video-js.css';
+import  'videojs-mobile-ui';
 window.videojs = videojs;
 require('videojs-contrib-hls/dist/videojs-contrib-hls.js');
 class Player extends Component {
   startVideo(video) {
-      videojs(video)
+		plugins: 
+		videojs.registerPlugin('mobileUi', mobileUi)
     };
   render () {
     return (
