@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@silvermine/videojs-chromecast": "^1.1.1",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.2",
     "react-cookie": "^3.0.8",
